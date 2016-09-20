@@ -11,7 +11,7 @@ describe('title component', () => {
       .then((fixture: ComponentFixture<any>) => {
         fixture.detectChanges();
         const title = fixture.nativeElement;
-        expect(title.querySelector('h1').textContent.trim()).toBe('Cats!');
+        expect(title.querySelector('h1').textContent.trim()).toBe('Cats');
       });
   })));
 });

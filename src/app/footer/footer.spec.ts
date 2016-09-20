@@ -12,7 +12,7 @@ describe('footer component', () => {
       .then((fixture: ComponentFixture<any>) => {
         fixture.detectChanges();
         const footer = fixture.nativeElement;
-        expect(footer.querySelector('a').textContent.trim()).toBe('Brian Ardito');
+        expect(footer.querySelector('span').textContent.trim()).toBe('Brian Ardito');
       });
   })));
 });

@@ -140,14 +140,14 @@ describe('pets component', () => {
       };
     });
 
-    it('should mock the pets and render 6 elements <pet>', async(inject([TestComponentBuilder], (tcb: TestComponentBuilder) => {
+    it('should mock the pets and render 7 elements <pet>', async(inject([TestComponentBuilder], (tcb: TestComponentBuilder) => {
       return tcb
         .overrideDirective(PetsComponent, PetComponent, MockComponent)
         .createAsync(PetsComponent)
         .then((fixture: ComponentFixture<any>) => {
           fixture.detectChanges();
           const pets = fixture.nativeElement;
-          expect(pets.querySelectorAll('cats-pet').length).toBe(6);
+          expect(pets.querySelectorAll('cats-pet').length).toBe(7);
         });
     })));
   });
